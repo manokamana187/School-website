@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Shree Manokamana Secondary School | Quality Education</title>
+  <!-- Bootstrap 5 CSS (Minimal & Clean) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Simple, elegant, modern -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free icons, clean look) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fefefe;
+      color: #1f2e3a;
+      scroll-behavior: smooth;
+    }
+
+    /* Minimal spacing & clean containers */
+    .section-padding {
+      padding: 5rem 0;
+    }
+
+    .section-padding-sm {
+      padding: 3rem 0;
+    }
+
+    /* Soft gradients & subtle borders */
+    .hero {
+      background: linear-gradient(135deg, #f8fafc 0%, #eef2f5 100%);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .school-name {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0b3b3f;
+    }
+
+    .subtitle {
+      font-weight: 400;
+      color: #2c6e6b;
+      border-left: 3px solid #2c6e6b;
+      padding-left: 1rem;
+    }
+
+    .offer-card {
+      background: white;
+      border-radius: 24px;
+      padding: 1.8rem 1.5rem;
+      transition: all 0.25s ease;
+      border: 1px solid #e9edf2;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      height: 100%;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-4px);
+      border-color: #cbdbe0;
+      box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.08);
+    }
+
+    .offer-icon {
+      font-size: 2.4rem;
+      color: #2a7f6e;
+      margin-bottom: 1rem;
+    }
+
+    .offer-title {
+      font-weight: 600;
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: #1a4a44;
+    }
+
+    .offer-text {
+      font-size: 0.95rem;
+      color: #4a5b64;
+      line-height: 1.5;
+    }
+
+    .contact-info {
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+      border: 1px solid #eef2f8;
+      transition: all 0.2s;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px dashed #eef2f5;
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: #eef7f4;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #1f6e63;
+      font-size: 1.25rem;
+    }
+
+    .contact-detail {
+      font-weight: 500;
+      color: #1f2e3a;
+      word-break: break-word;
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #6c7e8a;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #fafcfc;
+      border-top: 1px solid #eaeef3;
+      font-size: 0.85rem;
+      color: #5d6e7a;
+    }
+
+    .btn-outline-custom {
+      border: 1px solid #cbdbe2;
+      color: #2c6e6b;
+      border-radius: 40px;
+      padding: 0.5rem 1.6rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .btn-outline-custom:hover {
+      background: #2c6e6b;
+      border-color: #2c6e6b;
+      color: white;
+    }
+
+    .badge-motto {
+      background-color: #e3f2ef;
+      color: #115a52;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .section-padding {
+        padding: 3rem 0;
+      }
+      .school-name {
+        font-size: 2rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION: School name + Motto + Description -->
+  <div class="hero">
+    <div class="container section-padding">
+      <div class="row align-items-center justify-content-between g-5">
+        <div class="col-lg-7">
+          <span class="badge-motto mb-3 d-inline-block"><i class="fas fa-leaf me-1"></i> Since 1990</span>
+          <h1 class="school-name display-3 fw-bold mb-3">Shree Manokamana<br>Secondary School</h1>
+          <p class="subtitle fs-4 mb-3">"Quality Education is our Motto"</p>
+          <p class="text-secondary fs-5 mb-4" style="max-width: 90%;">
+            We are here to Provide Quality Education for your children and to make their future bright.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-outline-custom"><i class="fas fa-phone-alt me-2"></i>Get in Touch</a>
+            <a href="#offer" class="btn btn-link text-decoration-none text-secondary-emphasis" style="color:#2c6e6b;"><i class="fas fa-arrow-right me-1"></i> What we offer</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center text-lg-end">
+          <div class="bg-white p-4 rounded-4 shadow-sm d-inline-block" style="border-radius: 40px;">
+            <i class="fas fa-chalkboard-user fa-3x" style="color: #2a7f6e;"></i>
+            <div class="mt-2 fw-semibold">Rajbiraj-6, Sapatari</div>
+            <div class="small text-muted">Nepal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT WE OFFER Section -->
+  <div id="offer" class="container section-padding">
+    <div class="text-center mb-5">
+      <h2 class="fw-semibold" style="color: #1a4a44;">What We Offer</h2>
+      <div class="mx-auto mt-2" style="width: 60px; height: 2px; background: #2c6e6b;"></div>
+      <p class="text-muted mt-3 fs-6">A nurturing environment for holistic growth</p>
+    </div>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="offer-card text-center text-md-start">
+          <div class="offer-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3 class="offer-title">Quality of Education</h3>
+          <p class="offer-text">We ensure academic excellence with modern teaching methods, well-structured curriculum, and focus on conceptual clarity for every child.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="offer-card text-center text-md-start">
+          <div class="offer-icon"><i class="fas fa-tree"></i></div>
+          <h3 class="offer-title">Good Environment to Study</h3>
+          <p class="offer-text">Peaceful, green, and safe campus with well-ventilated classrooms, library, and friendly atmosphere that inspires learning.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="offer-card text-center text-md-start">
+          <div class="offer-icon"><i class="fas fa-chalkboard"></i></div>
+          <h3 class="offer-title">Well-Experienced Teachers</h3>
+          <p class="offer-text">Our dedicated faculty brings years of expertise, mentorship, and personalized attention to unlock each student's potential.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHORT DESCRIPTION + VALUES (minimal callout) -->
+  <div class="bg-light" style="background-color: #f7fafc !important;">
+    <div class="container section-padding-sm">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <div class="p-4 p-md-5 rounded-4" style="background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.02); border: 1px solid #ecf3f0;">
+            <i class="fas fa-quote-left fa-2x text-secondary opacity-50 mb-3"></i>
+            <p class="fs-5 fw-light" style="color: #2c5a54;">“Providing quality education is not just a promise — it’s our responsibility. At Shree Manokamana Secondary School, we shape futures with integrity, care, and excellence.”</p>
+            <p class="mt-3"><span class="fw-semibold">— Principal's Desk</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div id="contact" class="container section-padding">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-5">
+        <h2 class="fw-semibold" style="color: #1a4a44;">Get in Touch</h2>
+        <div class="mt-2 mb-4" style="width: 50px; height: 2px; background: #2c6e6b;"></div>
+        <p class="text-muted">We’d love to hear from you. Reach out for admission inquiries, collaborations, or any questions about your child's education journey.</p>
+        <div class="mt-4 d-none d-md-block">
+          <i class="fas fa-map-marker-alt" style="color: #2c6e6b;"></i> <span class="ms-2">Rajbiraj-6, Sapatari, Nepal</span>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="contact-info p-4 p-xl-5">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-detail">manokamanasecondaryschoolrajbi@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div>
+              <div class="contact-label">Mobile / Phone</div>
+              <div class="contact-detail">9852820667, 9819751872, 98428221782, 9807713780</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-detail">Rajbiraj Municipality-6, Spatari, Madhesh Province, Nepal</div>
+            </div>
+          </div>
+          <div class="mt-4 pt-2">
+            <div class="d-flex gap-3">
+              <a href="#" class="text-secondary-emphasis text-decoration-none" style="color:#2c6e6b;"><i class="fab fa-facebook fa-lg"></i></a>
+              <a href="#" class="text-secondary-emphasis text-decoration-none" style="color:#2c6e6b;"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#" class="text-secondary-emphasis text-decoration-none" style="color:#2c6e6b;"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK INFO & MAP PLACEHOLDER (clean minimal) -->
+  <div class="container pb-5">
+    <div class="row g-3 justify-content-between align-items-center border-top pt-5">
+      <div class="col-md-6">
+        <h5 class="fw-semibold" style="color:#1a4a44;"><i class="fas fa-school me-2"></i> Shree Manokamana Secondary School</h5>
+        <p class="small text-muted mt-2">"Quality Education is our Motto" — Shaping young minds with discipline, creativity, and knowledge.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <div class="small text-muted">
+          <i class="far fa-clock me-1"></i> Mon-Fri: 7:00 AM – 4:00 PM
+        </div>
+        <div class="small mt-1">
+          <span class="badge bg-light text-dark fw-normal">Affiliated to National Examination Board (NEB)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <span>© 2025 Shree Manokamana Secondary School | Rajbiraj-6, Sapatari</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <span class="small">🌱 Nurturing Excellence, Building Character</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (for optional toggles, but not heavily used) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Smooth scroll for anchor links (minimal JS) -->
+  <script>
+    (function() {
+      // Smooth scroll for all anchor links that point to #id
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === "#" || targetId === "") return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
